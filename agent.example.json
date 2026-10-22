@@ -1,0 +1,41 @@
+{
+  "default_model": "deepseek-fast",
+  "models": {
+    "deepseek-fast": {
+      "model": "deepseek-flash",
+      "base_url": "https://api.deepseek.com",
+      "api_key_env": "DEEPSEEK_API_KEY",
+      "api_style": "deepseek",
+      "use_saved_key": true,
+      "thinking": true,
+      "reasoning_effort": "high",
+      "max_tokens": 393216
+    },
+    "deepseek-pro": {
+      "model": "deepseek-v4-pro",
+      "base_url": "https://api.deepseek.com",
+      "api_key_env": "DEEPSEEK_API_KEY",
+      "api_style": "deepseek",
+      "use_saved_key": true,
+      "thinking": true,
+      "reasoning_effort": "max",
+      "max_tokens": 393216
+    },
+    "custom-compatible": {
+      "model": "replace-with-your-model-id",
+      "base_url": "http://127.0.0.1:8000/v1",
+      "api_key_env": "CUSTOM_MODEL_API_KEY",
+      "api_style": "openai-compatible",
+      "use_saved_key": false,
+      "thinking": false,
+      "max_tokens": null
+    }
+  },
+  "paths": {
+    "solidcraft_cli": "../solidcraft-cli.exe",
+    "output_dir": "../parts"
+  },
+  "cad": {"visible": false, "connect": ""},
+  "agent": {"max_rounds": 0, "instructions_file": ""},
+  "workflow": {"export_formats": ["step", "stl"], "measure": true, "preview": true, "stage_save": true, "drawings": true}
+}
